@@ -645,6 +645,19 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .wifi-note { font-size: 0.78rem; color: rgba(255,255,255,0.35); font-style: italic; }
 
+.btn-copy-wifi {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 18px; padding: 12px 28px;
+  background: rgba(201,169,110,0.18);
+  border: 1px solid rgba(201,169,110,0.45);
+  border-radius: 50px;
+  color: var(--gold-light);
+  font-family: var(--sans); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 1px; cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-copy-wifi:hover { background: rgba(201,169,110,0.30); transform: translateY(-2px); }
+
 /* ============ STEPS ============ */
 .steps { display: flex; flex-direction: column; }
 
@@ -681,7 +694,9 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 20px 24px;
   background: var(--white); border: 1px solid var(--border);
   border-radius: 12px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
+.info-item:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
 
 .info-item-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
 
@@ -921,6 +936,14 @@ footer {
   .places-grid { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
   .directions-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .split { grid-template-columns: 1fr; min-height: auto; }
+  .split.reverse { direction: ltr; }
+  .split-image { height: 300px; }
+  .split-content { padding: 36px 24px; }
+  .map-info-inner { grid-template-columns: 1fr; gap: 28px; }
 }
 
 .property-stats {
@@ -1211,6 +1234,7 @@ footer {
       <div class="wifi-label">Password</div>
       <div class="wifi-password">formerworld153</div>
       <div class="wifi-note">Case-sensitive &nbsp;·&nbsp; Router is in the living room</div>
+      <button class="btn-copy-wifi" onclick="copyWifiPassword()">📋 &nbsp;Copy Password</button>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px;">
       <div class="info-item">
@@ -1664,7 +1688,7 @@ footer {
           <span class="place-badge">Nearest Hospital</span>
         </div>
         <div class="place-card-address">📍 9300 Campus Point Dr, La Jolla, CA 92037</div>
-        <div class="place-card-dist">📞 (858) 657-7000</div>
+        <div class="place-card-dist"><a href="tel:8586577000" style="color:inherit;text-decoration:none;">📞 (858) 657-7000</a></div>
         <div class="place-card-desc">Full-service hospital with 24/7 emergency care. Closest major hospital to the property — equipped for all emergencies.</div>
       </div>
       <div class="place-card">
@@ -1686,7 +1710,7 @@ footer {
           <span class="place-badge">Non-Emergency</span>
         </div>
         <div class="place-card-address">📍 13396 Salmon River Rd, San Diego, CA 92129</div>
-        <div class="place-card-dist">📞 (858) 538-8000</div>
+        <div class="place-card-dist"><a href="tel:8585388000" style="color:inherit;text-decoration:none;">📞 (858) 538-8000</a></div>
         <div class="place-card-desc">For non-emergency police assistance — noise complaints, disturbances, or general concerns.</div>
       </div>
       <div class="place-card">
@@ -1741,6 +1765,15 @@ footer {
 </nav>
 
 <script>
+// ---- Copy WiFi Password ----
+function copyWifiPassword() {
+  navigator.clipboard.writeText('formerworld153').then(() => {
+    alert('WiFi password copied!');
+  }).catch(() => {
+    alert('formerworld153');
+  });
+}
+
 // ---- Active section tracking ----
 const sections = document.querySelectorAll('section[id], div[id]');
 const topLinks  = document.querySelectorAll('#navbar .nav-link');
