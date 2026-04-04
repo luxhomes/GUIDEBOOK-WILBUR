@@ -2,10 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(unzip -l \"📍 Property Access Guide Wilbur.docx\")",
+<<<<<<< HEAD
       "Bash(python3:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)"
+=======
+      "Bash(python3:*)"
+>>>>>>> 5e4e1f4b5719cb8c5c6beee055921eb6276d759c
     ]
   }
 }

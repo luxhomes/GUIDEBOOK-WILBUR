@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 You are editing an existing HTML + CSS Airbnb guidebook file.
 
 Apply the following updates EXACTLY.
@@ -99,3 +100,106 @@ All images:
 
 OUTPUT:
 Return full updated HTML file.
+=======
+You are editing an existing HTML + CSS Airbnb guidebook file.
+
+Apply the following updates EXACTLY.
+
+IMPORTANT:
+
+* Do NOT modify anything outside specified sections
+* Do NOT rewrite content unless told
+* Preserve all structure, spacing, and styles
+
+---
+
+1. WELCOME SECTION
+
+Replace:
+🌊 Near the Beach
+🔑 Keypad Entry
+📶 Fast WiFi
+🚗 Driveway Parking
+
+WITH:
+2,804 sq ft • 12 beds • 3 bathrooms • 16+ guests
+
+---
+
+2. PROPERTY OVERVIEW
+
+* KEEP existing property overview image
+* ADD "map" image (from image files)
+
+Placement:
+AFTER property address
+BEFORE "Directions – Getting Here"
+
+---
+
+3. IMAGE MOVEMENTS
+
+* Move "living room" image → House Rules section
+* Replace Check-in image with "check in" image
+
+---
+
+4. EXPLORE SECTION
+
+* Move Explore AFTER House Rules
+* Add "explore" image at TOP
+
+---
+
+5. DINING SECTION IMAGES
+
+Attach images:
+
+* oscars mexican
+* better buzz coffee
+* baked bear
+
+Match layout style of existing boards
+
+---
+
+6. PACIFIC BEACH STAPLES
+
+Attach images:
+
+* Rubio's Coastal Grill
+* Great Grilled Cheese
+* Kono's Surf Club Cafe
+
+Same layout as Dining
+
+---
+
+7. GROCERIES SECTION
+
+Add ONE image:
+
+* groceries OR groceries2
+
+---
+
+8. SAFETY SECTION
+
+* Insert images from docs
+* Ensure high quality / high resolution
+
+---
+
+9. IMAGE STYLING
+
+All images:
+
+* width: 100%
+* border-radius: 12px
+* consistent spacing
+
+---
+
+OUTPUT:
+Return full updated HTML file.
+>>>>>>> 5e4e1f4b5719cb8c5c6beee055921eb6276d759c
