@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"📍 Property Access Guide Wilbur.docx\")",
+      "Bash(python3:*)"
+    ]
+  }
+}
