@@ -64,7 +64,7 @@ img { display: block; max-width: 100%; height: auto; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('welcome%20hero.png');
+  background-image: url('assets/images/welcome%20hero.png');
   background-size: cover;
   background-position: center 30%;
   transform: scale(1.05);
@@ -1031,7 +1031,7 @@ footer {
 
 <!-- Full-width outdoor photo strip -->
 <div class="photo-strip">
-  <img src="Outdoor.png" alt="Outdoor area of the property" loading="lazy">
+  <img src="assets/images/Outdoor.png" alt="Outdoor area of the property" loading="lazy">
   <div class="photo-strip-overlay"></div>
 </div>
 
@@ -1062,7 +1062,7 @@ footer {
 <section id="map-section">
   <div class="map-img-container" id="aerial-map">
     <div class="map-badge">🗺️ &nbsp;Property Overview &nbsp;·&nbsp; Pacific Beach, San Diego</div>
-    <img src="property%20overview.png" alt="Property overview — 2425 Wilbur Ave, San Diego" loading="lazy" style="width:100%;display:block;">
+    <img src="assets/images/property%20overview.png" alt="Property overview — 2425 Wilbur Ave, San Diego" loading="lazy" style="width:100%;display:block;">
     <div class="map-overlay-top"></div>
     <div class="map-overlay-bottom"></div>
     <div class="map-zoom-hint" id="zoom-hint">Click to zoom in</div>
@@ -1095,7 +1095,7 @@ footer {
 
 <!-- ===================== MAP IMAGE ===================== -->
 <div style="overflow:hidden;">
-  <img src="map.png" alt="Aerial neighborhood map — 2425 Wilbur Ave, San Diego" loading="lazy" style="width:100vw;height:450px;object-fit:cover;display:block;margin-left:calc(-50vw + 50%);">
+  <img src="assets/images/map.png" alt="Aerial neighborhood map — 2425 Wilbur Ave, San Diego" loading="lazy" style="width:100vw;height:450px;object-fit:cover;display:block;margin-left:calc(-50vw + 50%);">
 </div>
 
 <!-- ===================== DIRECTIONS ===================== -->
@@ -1179,7 +1179,7 @@ footer {
 <!-- ===================== CHECK-IN — split: image left / steps right ===================== -->
 <div class="split" id="checkin">
   <div class="split-image" style="background:#000;">
-    <img src="check-in.png" alt="Property check-in entrance" loading="lazy" style="max-width:70%;height:auto;object-fit:contain;display:block;margin:0 auto;">
+    <img src="assets/images/check%20in.png" alt="Property check-in entrance" loading="lazy" style="max-width:70%;height:auto;object-fit:contain;display:block;margin:0 auto;">
   </div>
   <div class="split-content">
     <p class="section-tag">🔑 &nbsp;Check-In</p>
@@ -1218,7 +1218,7 @@ footer {
 <!-- ===================== WIFI — split: content left / image right ===================== -->
 <div class="split reverse" id="wifi">
   <div class="split-image">
-    <img src="kitchen.png" alt="Modern fully equipped kitchen" loading="lazy">
+    <img src="assets/images/kitchen.png" alt="Modern fully equipped kitchen" loading="lazy">
   </div>
   <div class="split-content" style="background:var(--bg);">
     <p class="section-tag">📶 &nbsp;WiFi Access</p>
@@ -1288,7 +1288,7 @@ footer {
 <!-- ===================== HOUSE RULES — split: dark rules right ===================== -->
 <div class="split split-dark" id="rules">
   <div class="split-image">
-    <img src="living-room.png" alt="Modern living room interior" loading="lazy">
+    <img src="assets/images/living-room.png" alt="Modern living room interior" loading="lazy">
   </div>
   <div class="split-content" style="background:var(--dark);">
     <p class="section-tag" style="color:var(--gold-light);">📋 &nbsp;Guidelines</p>
@@ -1346,6 +1346,7 @@ footer {
     <div class="cat-label">🌊 Beaches &amp; Coastal Spots</div>
     <div class="places-grid" style="margin-bottom: 44px;">
       <div class="place-card">
+        <img src="assets/images/pacific-beach.png" alt="Pacific Beach" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Pacific Beach</div>
           <span class="place-badge">~5 min</span>
@@ -1354,14 +1355,16 @@ footer {
         <div class="place-card-desc">Lively beach with a boardwalk, great surf, and a vibrant café scene. San Diego's favorite beach neighborhood — right on your doorstep.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/mission-beach.png" alt="Mission Beach" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
-          <div class="place-card-name">Mission Beach &amp; Belmont Park</div>
+          <div class="place-card-name">Mission Beach</div>
           <span class="place-badge">~8 min</span>
         </div>
         <div class="place-card-address">📍 Mission Blvd, San Diego</div>
-        <div class="place-card-desc">Classic California boardwalk energy. Enjoy rides at Belmont Park, fresh fish tacos, and stunning sunset views over the Pacific.</div>
+        <div class="place-card-desc">Classic California boardwalk energy. Fresh fish tacos, stunning sunset views over the Pacific, and a lively beach scene just minutes away.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/mission-bay-park.png" alt="Mission Bay Park" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Mission Bay Park</div>
           <span class="place-badge">~7 min</span>
@@ -1374,6 +1377,7 @@ footer {
     <div class="cat-label">🌄 Nature &amp; Outdoor Adventures</div>
     <div class="places-grid" style="margin-bottom: 44px;">
       <div class="place-card">
+        <img src="assets/images/torrey-pines.jpg" alt="Torrey Pines State Natural Reserve" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Torrey Pines State Natural Reserve</div>
           <span class="place-badge">~15 min</span>
@@ -1382,6 +1386,7 @@ footer {
         <div class="place-card-desc">Stunning coastal hiking trails with breathtaking ocean views. One of the most scenic state parks in California — unmissable.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/la-jolla-cove.png" alt="La Jolla Cove" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">La Jolla Cove</div>
           <span class="place-badge">~15 min</span>
@@ -1390,6 +1395,7 @@ footer {
         <div class="place-card-desc">Crystal-clear water, resident sea lions, and dramatic cliffs. An iconic San Diego experience — plan a visit, you won't regret it.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/balboa-park.png" alt="Balboa Park" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Balboa Park</div>
           <span class="place-badge">~15 min</span>
@@ -1402,6 +1408,7 @@ footer {
     <div class="cat-label">⏳ Arrived Early? Do This First</div>
     <div class="places-grid" style="margin-bottom: 28px;">
       <div class="place-card">
+        <img src="assets/images/better-buzz-coffee-roasters.jpg" alt="Better Buzz Coffee Roasters" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Better Buzz Coffee Roasters</div>
           <span class="place-badge">~5 min</span>
@@ -1410,6 +1417,7 @@ footer {
         <div class="place-card-desc">Great coffee, smoothies, and breakfast. Popular for their avocado toast — the perfect recharge after traveling.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/oscar's-mexican-seafood.jpg" alt="Oscar's Mexican Seafood" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Oscar's Mexican Seafood</div>
           <span class="place-badge">~6 min</span>
@@ -1418,6 +1426,7 @@ footer {
         <div class="place-card-desc">A must-try local favorite known for fresh fish tacos! Grab a bite before check-in — you'll be talking about it all trip.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/the-baked-bear.jpg" alt="The Baked Bear" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">The Baked Bear</div>
           <span class="place-badge">~7 min</span>
@@ -1436,7 +1445,7 @@ footer {
 
 <!-- ===================== EXPLORE IMAGE ===================== -->
 <div class="photo-strip">
-  <img src="explore.jpg" alt="Explore San Diego" loading="lazy">
+  <img src="assets/images/explore.jpg" alt="Explore San Diego" loading="lazy">
   <div class="photo-strip-overlay"></div>
 </div>
 
@@ -1452,7 +1461,7 @@ footer {
     <div class="cat-label">🌮 Local Favorites</div>
     <div class="places-grid" style="margin-bottom: 40px;">
       <div class="place-card">
-        <img src="oscars.jpg" alt="Oscar's Mexican Seafood" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/oscar's-mexican-seafood.jpg" alt="Oscar's Mexican Seafood" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Oscar's Mexican Seafood</div>
           <span class="place-badge">⭐ Top Pick</span>
@@ -1462,7 +1471,7 @@ footer {
         <div class="place-card-desc">The best fish tacos in San Diego — fresh, affordable, and authentic. A local institution everyone loves.</div>
       </div>
       <div class="place-card">
-        <img src="better-buzz.jpg" alt="Better Buzz Coffee Roasters" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;object-position:center 70%;margin-bottom:14px;">
+        <img src="assets/images/better-buzz-coffee-roasters.jpg" alt="Better Buzz Coffee Roasters" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;object-position:center 70%;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Better Buzz Coffee Roasters</div>
           <span class="place-badge">Breakfast</span>
@@ -1472,7 +1481,7 @@ footer {
         <div class="place-card-desc">Specialty coffee, smoothies, and beloved avocado toast. The go-to morning spot for the neighborhood.</div>
       </div>
       <div class="place-card">
-        <img src="baked-bear.jpg" alt="The Baked Bear" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/the-baked-bear.jpg" alt="The Baked Bear" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">The Baked Bear</div>
           <span class="place-badge">Dessert</span>
@@ -1486,7 +1495,7 @@ footer {
     <div class="cat-label">🌊 Pacific Beach Staples</div>
     <div class="places-grid" style="margin-bottom: 40px;">
       <div class="place-card">
-        <img src="konos.jpg" alt="Kono's Surf Club Cafe" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/konos.jpg" alt="Kono's Surf Club Cafe" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Kono's Surf Club Cafe</div>
           <span class="place-badge">Brunch</span>
@@ -1496,7 +1505,7 @@ footer {
         <div class="place-card-desc">Legendary breakfast burritos with a line out the door — for good reason. Cash only, worth every minute of the wait.</div>
       </div>
       <div class="place-card">
-        <img src="grilled-cheese.png" alt="Grater Grilled Cheese" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/grilled-cheese.png" alt="Grater Grilled Cheese" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Grater Grilled Cheese</div>
           <span class="place-badge">Casual</span>
@@ -1506,7 +1515,7 @@ footer {
         <div class="place-card-desc">Creative gourmet grilled cheese sandwiches in a laid-back beachside setting. Perfect for a quick, satisfying meal.</div>
       </div>
       <div class="place-card">
-        <img src="rubios.jpg" alt="Rubio's Coastal Grill" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/rubios.jpg" alt="Rubio's Coastal Grill" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Rubio's Coastal Grill</div>
           <span class="place-badge">Fast Casual</span>
@@ -1527,7 +1536,7 @@ footer {
 <!-- ===================== GROCERIES — split: image left / list right ===================== -->
 <div class="split" id="groceries">
   <div class="split-image">
-    <img src="groceryfinal.jpg" alt="Grocery shopping" loading="lazy">
+    <img src="assets/images/groceryfinal.jpg" alt="Grocery shopping" loading="lazy">
   </div>
   <div class="split-content" style="background:var(--bg);">
     <p class="section-tag">🛒 &nbsp;Groceries</p>
@@ -1663,7 +1672,7 @@ footer {
     <div class="cat-label" style="margin-bottom:18px;">🏥 Nearest Hospital</div>
     <div class="places-grid" style="margin-bottom: 36px;">
       <div class="place-card">
-        <img src="hospital.jpeg" alt="UC San Diego Health — La Jolla" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/uc-san-diego-health.png" alt="UC San Diego Health — La Jolla" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">UC San Diego Health — La Jolla</div>
           <span class="place-badge">Nearest Hospital</span>
@@ -1673,6 +1682,7 @@ footer {
         <div class="place-card-desc">Full-service hospital with 24/7 emergency care. Closest major hospital to the property — equipped for all emergencies.</div>
       </div>
       <div class="place-card">
+        <img src="assets/images/scripps-mercy-memorial-hospital.png" alt="Scripps Memorial Hospital La Jolla" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">Scripps Memorial Hospital La Jolla</div>
           <span class="place-badge">~15 min</span>
@@ -1685,7 +1695,7 @@ footer {
     <div class="cat-label" style="margin-bottom:18px;">👮 Police — Non-Emergency</div>
     <div class="places-grid" style="margin-bottom: 36px;">
       <div class="place-card">
-        <img src="police-station.jpeg" alt="San Diego Police — Northern Division" loading="lazy" style="width:100%;border-radius:8px;height:180px;object-fit:cover;margin-bottom:14px;">
+        <img src="assets/images/sdpd-northern-division.png" alt="San Diego Police — Northern Division" loading="lazy" style="width:100%;border-radius:8px;margin-bottom:14px;">
         <div class="place-card-header">
           <div class="place-card-name">San Diego Police — Northern Division</div>
           <span class="place-badge">Non-Emergency</span>
@@ -1693,14 +1703,6 @@ footer {
         <div class="place-card-address">📍 13396 Salmon River Rd, San Diego, CA 92129</div>
         <div class="place-card-dist"><a href="tel:8585388000" style="color:inherit;text-decoration:none;">📞 (858) 538-8000</a></div>
         <div class="place-card-desc">For non-emergency police assistance — noise complaints, disturbances, or general concerns.</div>
-      </div>
-      <div class="place-card">
-        <div class="place-card-header">
-          <div class="place-card-name">Emergency Services</div>
-          <span class="place-badge">24/7</span>
-        </div>
-        <div class="place-card-address">📞 911 — Police, Fire &amp; Medical</div>
-        <div class="place-card-desc">For all life-threatening emergencies — call 911 immediately. Ambulance, fire department, and police available 24/7.</div>
       </div>
     </div>
 
